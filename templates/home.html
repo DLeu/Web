@@ -1,0 +1,8 @@
+{% for message in get_flashed_messages() %}
+ <p>{{ message }} </p>
+ {% endfor %}
+<h1>Produs nou</h1>
+<form action="/save" method="POST">
+	<input name="name">
+	<button type="submit">save</button>
+</form>
